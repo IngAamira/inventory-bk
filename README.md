@@ -12,7 +12,7 @@ Asegúrate de tener instaladas las siguientes versiones de las tecnologías requ
 - Spring Framework 6.0.6
 - JDK 17.0.2 (build 17.0.2+8)
 - Jakarta EE 9
-- MySQL
+- MySQL 8.0.35
 
 ## Instrucciones de Instalación
 
@@ -29,7 +29,7 @@ Asegúrate de tener instaladas las siguientes versiones de las tecnologías requ
     ```properties
     spring.datasource.url=jdbc:mysql://localhost/you_name_db?allowPublicKeyRetrieval=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
     spring.datasource.username=root
-    spring.datasource.password=your_pastword
+    spring.datasource.password=your_password
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     spring.jpa.database-platform=org.hibernate.dialect.MySQL57Dialect
     spring.jpa.hibernate.ddl-auto=update
@@ -65,6 +65,7 @@ Asegúrate de tener instaladas las siguientes versiones de las tecnologías requ
 ├── build.gradle
 ├── settings.gradle
 ├── README.md
+```
 
 ## Endpoint
 - http://localhost:8080/api/v1/categories
